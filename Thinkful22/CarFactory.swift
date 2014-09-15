@@ -12,6 +12,20 @@ class CarFactory {
     var name = ""
     var color = ""
     var horsepower = 0
-    var automaticOption = false
+    var automaticOption = ""
+    
+    
+    func setupCarDetailsWithName(nameOfCar: String, colorOfCar: String, horsepowerOfCar: Int, automaticOptionOfCar: Bool) {
+        self.name = nameOfCar
+        self.color = colorOfCar
+        self.horsepower = horsepowerOfCar
+        self.automaticOption = (automaticOptionOfCar ? "Automatic" : "Manual")
+        
+        println("My \(name) is \(color) and it has \(horsepower) horsepowers")
+    }
+    func description() {
+        
+    }
+    
     
 }
